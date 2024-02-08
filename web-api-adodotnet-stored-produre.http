@@ -1,0 +1,6 @@
+@web_api_adodotnet_stored_produre_HostAddress = http://localhost:5137
+
+GET {{web_api_adodotnet_stored_produre_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
