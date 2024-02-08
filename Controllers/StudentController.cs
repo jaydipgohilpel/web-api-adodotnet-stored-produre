@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using web_api_adodotnet_stored_produre.Models;
 
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace web_api_adodotnet_stored_produre.Controllers
 {
     [Route("api/student")]
@@ -18,7 +15,7 @@ namespace web_api_adodotnet_stored_produre.Controllers
             _studentRepository = studentRepository;
         }
 
-        // GET: api/<studentController>
+        // GET: api/student
         [HttpGet]
         [HttpGet("{id}")]
         public ActionResult<IEnumerable<StudentGetModel>> Get(int? id)
@@ -35,7 +32,7 @@ namespace web_api_adodotnet_stored_produre.Controllers
             }
         }
 
-        // POST api/<studentController>
+        // POST api/student
         [HttpPost]
         public ActionResult<IEnumerable<StudentModel>> Post(StudentModel student)
         {
@@ -55,7 +52,7 @@ namespace web_api_adodotnet_stored_produre.Controllers
             }
         }
 
-        // PUT api/<studentController>/5
+        // PUT api/student/5
         [HttpPut("{id}")]
         public ActionResult<IEnumerable<StudentModel>> Put(int id, StudentModel student)
         {
@@ -75,7 +72,7 @@ namespace web_api_adodotnet_stored_produre.Controllers
             }
         }
 
-        // DELETE api/<studentController>/5
+        // DELETE api/student/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int? id)
         {
